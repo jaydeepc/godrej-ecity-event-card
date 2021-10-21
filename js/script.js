@@ -9,7 +9,7 @@ const downloadCharacterSheet = () => {
       // var img    = canvas.toDataURL("image/png");
       // document.write('<img src="'+img+'"/>');
       var link = document.createElement('a');
-      link.download = 'filename.png';
+      link.download = 'filename.jpg';
       link.href = canvas.toDataURL();
       link.click();
     });
