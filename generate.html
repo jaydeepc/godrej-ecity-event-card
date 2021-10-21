@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ID card generator</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.css" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="page-title">
+  <h1>Generate Godrej Ecity Event Card</h1>
+  <span>Please provide your details to generate the ID card for your event</span>
+</div>
+
+<div>
+  <div class="container">
+    <div class="main-content">
+      <div id="id-card">
+        <div class="id-card material-ui-shadow">
+
+          <!-- \\ logo -->
+          <div class="id-card__subject-id">
+
+          </div>
+          <div class="hole">
+            <!-- <img src="./assets/hole.png" alt=""> -->
+          </div>
+
+          <div class="id-card__logo logo">
+            <img src="./assets/Token-text.png"/>
+          </div>
+          <!-- // foundation logo -->
+
+          <div class="id-card__mugshot">
+            <img src="./assets/Token.jpg" id="id-card-mugshot"/>
+          </div>
+
+          <!-- \\ details -->
+          <div class="id-card__details">
+            <div class="id-card__detail name">
+              <span id="id-card-name">Name</span>
+            </div>
+            <div class="separator"></div>
+            <div class="id-card__detail">
+              <span class="id-card__detail-label">Flat No : </span>
+              <span class="id-card__detail-value" id="id-card-emp-id">  </span>
+            </div>
+            <div class="id-card__detail">
+              <span class="id-card__detail-label">No of Adults: </span>
+              <span class="id-card__detail-value" id="id-card-blood-group">  </span>
+            </div>
+            <div class="id-card__detail">
+              <span class="id-card__detail-label">No of Kids (Below 10 Yrs): </span>
+              <span class="id-card__detail-value" id="id-card-blood-group-2">  </span>
+            </div>            
+          </div>
+          <!-- // details -->
+        </div>
+      </div>
+
+      <div id="id-form">
+        <div class="id-form">
+          <div class="id-form__row id-form__row--inline">
+            <div class="id-form__label">Full Name</div>
+            <div class="id-form__input">
+              <input type="text" id="name" name=name required>
+            </div>
+          </div>
+
+          <div></div>
+
+          <div class="id-form__row id-form__row--inline">
+            <div class="id-form__label">Flat number</div>
+            <div class="id-form__input">
+              <input type="text" id="emp_id" name=eid required>
+            </div>
+          </div>
+
+          <div></div>
+
+          <div class="id-form__row id-form__row--inline">
+            <div class="id-form__label">No of Adults:</div>
+            <div class="id-form__input">
+              <input type="text" id="blood_group" name=bgroup required>
+            </div>
+          </div>
+
+          <div></div>
+          <div class="id-form__row id-form__row--inline">
+            <div class="id-form__label">No of Kids (Below 10 Yrs):</div>
+            <div class="id-form__input">
+              <input type="text" id="blood_group_2" name=bgroup-2 required>
+            </div>
+          </div>
+        </div>
+
+        <button id="download-button">Download</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- partial -->
+<script src='https://rawgit.com/blueimp/JavaScript-MD5/master/js/md5.min.js'></script>
+<script src='./js/html2canvas.min.js'></script>
+<script src="./js/script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js'></script>
+
+</body>
+</html>
